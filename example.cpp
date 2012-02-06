@@ -9,6 +9,8 @@ void Fruit::peel(){ printf("this ptr = %p\t", this);
 						weight++;
 						printf("weight=%d\n", this->weight);} //private variable cannot be exposed, by Tom Xue
 
+//above code cannot be in main(), by Tom Xue
+
 main()
 {
 	Fruit apple;
