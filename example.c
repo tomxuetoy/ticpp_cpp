@@ -1,21 +1,23 @@
-//vector 的遍历输出
-
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
-int main()
+int main(void)
 {
- int a[7]={1,2,3,4,5,6,7};
-  vector<int> va(a,a+7);
-  vector<int> va2(10,42);
-   for(int i=0;i<va.size();i++)
-     {
-	 	cout<<va[i]<<" ";
-		cout<<va.size()<<endl;
+	vector<int> num;    // STL中的vector容器
+  	int element;
 
-		cout<<va2[i]<<" ";
-		cout<<va2.size()<<endl;
-	 }
+	// 从标准输入设备读入整数，
+	// 直到输入的是非整型数据为止
+    while (cin >> element)
+	    num.push_back(element);
+
+    // STL中的排序算法
+    sort(num.begin(), num.end());
+
+    // 将排序结果输出到标准输出设备
+    for (int i = 0; i < num.size(); i++)
+	     cout << num[i] << "\n";
 }
