@@ -1,13 +1,18 @@
-class Fruit {public: void peel(); void slice(); void juice();
-			Fruit(int i, int j);
-			~Fruit();
-			private: int weight, calories_per_oz;
-			};
-
-Fruit::Fruit(int i, int j) {weight = i; calories_per_oz = j;}
-Fruit::~Fruit() {}
-
-main()
+class demo{
+public:
+	demo(){};	//或者和下面第15行一同注释掉
+    demo(int i){x=i;}
+    int print(){return x;}
+private:
+    int x;
+};
+ 
+#include <iostream>
+using namespace std;
+ 
+int main()
 {
-	Fruit melon(4, 5), banana(12, 8);
+    demo *a=new demo;	//注释
+    demo *b=new demo(1);
+    cout<<b->print()<<endl;
 }
