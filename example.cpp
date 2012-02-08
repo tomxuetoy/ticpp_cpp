@@ -22,8 +22,10 @@ main()
 	Fruit orange;
 	
 	Fruit *p;
+	
 	p = &apple;
 	p->peel();
+
 	p = &orange;
 	p->peel();
 }
