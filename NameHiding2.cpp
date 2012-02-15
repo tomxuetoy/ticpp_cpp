@@ -36,7 +36,7 @@ public:
 
 class Derived3 : public Base {
 public:
-  // Cannot change return type:
+  // Cannot change return type if passing on value:
   //! void f() const{ cout << "Derived3::f()\n";}
 };
 
