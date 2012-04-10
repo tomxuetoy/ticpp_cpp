@@ -1,0 +1,2 @@
+Compile:
+    g++ ex.cpp -lboost_date_time
