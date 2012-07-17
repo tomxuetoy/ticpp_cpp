@@ -1,2 +1,8 @@
-Compile:
-    g++ ex.cpp -lboost_date_time
+basic.cpp
+    basic cpp program, to apply 'using namespace std'
+
+
+boost-date_time.cpp
+    to show how to use 'boost gregorian date_time' lib to calculate one's living time
+    Compile:
+        g++ boost-date_time.cpp -lboost_date_time
