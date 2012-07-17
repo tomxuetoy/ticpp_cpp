@@ -16,6 +16,13 @@ GP_basic.cpp
 	to show what is Generic Programming: a basic example
 
 
+initializer_list_right.cpp
+initializer_list_wrong.cpp
+    to prove that: the initializer list sequence should match the member sequence within class
+    another program, to show that initializer list must be within the constructor
+    basic initializer list test, to show how it works
+
+
 using.cpp
     to show how to use 'using' in C++
 
