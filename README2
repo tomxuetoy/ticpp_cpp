@@ -1,9 +1,0 @@
-Install boost on Ubuntu:
-    sudo apt-get install libboost-dev libboost-doc
-    sudo apt-get install libboost-all-dev
-
-Compile:
-    g++ ex.cpp -lboost_thread
-
-Where is the header file included in ex.cpp?
-    /usr/include/boost/thread/thread.hpp
