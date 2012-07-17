@@ -1,0 +1,33 @@
+basic.cpp
+    basic cpp program, to apply 'using namespace std'
+
+
+constructor_destructor.cpp
+    to show what is constructor and what is destructor in C++
+    to show how multi constructors work in C++
+
+
+exception.cpp
+    to show a basic cpp exception program: try...throw...catch
+
+
+using.cpp
+    to show how to use 'using' in C++
+
+
+boost-date_time.cpp
+    to show how to use 'boost gregorian date_time' lib to calculate one's living time
+    Compile:
+        g++ boost-date_time.cpp -lboost_date_time
+
+
+boost-thread.cpp
+    Install boost on Ubuntu:
+        sudo apt-get install libboost-dev libboost-doc
+        sudo apt-get install libboost-all-dev
+
+    Compile:
+        g++ ex.cpp -lboost_thread
+
+    Where is the header file included in ex.cpp?
+        /usr/include/boost/thread/thread.hpp
