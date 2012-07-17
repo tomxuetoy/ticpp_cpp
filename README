@@ -2,6 +2,11 @@ basic.cpp
     basic cpp program, to apply 'using namespace std'
 
 
+constructor_destructor.cpp
+    to show what is constructor and what is destructor in C++
+    to show how multi constructors work in C++
+
+
 using.cpp
     to show how to use 'using' in C++
 
