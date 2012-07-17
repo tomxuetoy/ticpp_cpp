@@ -6,3 +6,7 @@ boost-date_time.cpp
     to show how to use 'boost gregorian date_time' lib to calculate one's living time
     Compile:
         g++ boost-date_time.cpp -lboost_date_time
+
+
+using.cpp
+    to show how to use 'using' in C++
