@@ -7,6 +7,10 @@ constructor_destructor.cpp
     to show how multi constructors work in C++
 
 
+exception.cpp
+    to show a basic cpp exception program: try...throw...catch
+
+
 using.cpp
     to show how to use 'using' in C++
 
