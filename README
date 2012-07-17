@@ -11,6 +11,11 @@ exception.cpp
     to show a basic cpp exception program: try...throw...catch
 
 
+GP_basic.cpp
+	to show that 'max' is an existing function with <algorithm>
+	to show what is Generic Programming: a basic example
+
+
 using.cpp
     to show how to use 'using' in C++
 
