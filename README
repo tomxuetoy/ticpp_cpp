@@ -1,0 +1,88 @@
+AddingVirtuals.cpp
+    to understand how to invoke new virtual function which is defined in derived class: explicitly type cast
+
+
+Early.cpp
+    to show when late binding occurs and when early binding occurs
+
+
+GP_basic.cpp
+	to show that 'max' is an existing function with <algorithm>
+	to show what is Generic Programming: a basic example
+
+
+NameHiding2.cpp
+	to show what will happen when overloading of a virtual function
+
+
+ObjectSlicing.cpp
+	to show what is object slicing: occur when passing on value instead of address
+
+
+PureVirtualDefinitions.cpp
+	to show what is illegal pure virtual function: inline pure virtual function definition & creating object of a pure virtual function
+	to show what is pure virtual function and what is abstract class
+
+
+basic.cpp
+    basic cpp program, to apply 'using namespace std'
+
+
+boost-date_time.cpp
+    to show how to use 'boost gregorian date_time' lib to calculate one's living time
+    Compile:
+        g++ boost-date_time.cpp -lboost_date_time
+
+
+boost-thread.cpp
+    Install boost on Ubuntu:
+        sudo apt-get install libboost-dev libboost-doc
+        sudo apt-get install libboost-all-dev
+
+    Compile:
+        g++ ex.cpp -lboost_thread
+
+    Where is the header file included in ex.cpp?
+        /usr/include/boost/thread/thread.hpp
+
+
+constructor_destructor.cpp
+    to show what is constructor and what is destructor in C++
+    to show how multi constructors work in C++
+
+
+exception.cpp
+    to show a basic cpp exception program: try...throw...catch
+
+
+initializer_list_right.cpp
+initializer_list_wrong.cpp
+    to prove that: the initializer list sequence should match the member sequence within class
+    another program, to show that initializer list must be within the constructor
+    basic initializer list test, to show how it works
+
+
+local-varial-in-stack.cpp
+    show what value the local variable is before initialization:
+    to verify the local variable is in program's stack
+
+
+operator_overload.cpp
+	to show how to overload an operator in C++
+
+
+override.cpp
+    to show what is override in C++
+
+
+this-pointer_private-variable.cpp
+	to show how 'this' is and 'private' variable cannot be exposed in C++
+
+
+using.cpp
+    to show how to use 'using' in C++
+
+
+vector.cpp
+    to show a basic vector example
+    to show how to 'sort' vector
