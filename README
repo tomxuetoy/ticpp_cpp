@@ -54,6 +54,10 @@ local-varial-in-stack.cpp
     to verify the local variable is in program's stack
 
 
+ObjectSlicing.cpp
+	to show what is object slicing: occur when passing on value instead of address
+
+
 operator_overload.cpp
 	to show how to overload an operator in C++
 
