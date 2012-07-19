@@ -95,3 +95,7 @@ using.cpp
 vector.cpp
     to show a basic vector example
     to show how to 'sort' vector
+
+
+virtual_upcasting.cpp
+    to show what is upcasting (early binding)
