@@ -60,3 +60,8 @@ this-pointer_private-variable.cpp
 
 using.cpp
     to show how to use 'using' in C++
+
+
+vector.cpp
+    to show a basic vector example
+    to show how to 'sort' vector
