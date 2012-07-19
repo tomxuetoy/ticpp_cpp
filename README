@@ -97,5 +97,9 @@ vector.cpp
     to show how to 'sort' vector
 
 
+virtual_VPTR-size.cpp
+	to proves the existence of VPTR in C++
+
+
 virtual_upcasting.cpp
     to show what is upcasting (early binding)
