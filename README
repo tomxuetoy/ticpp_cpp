@@ -54,5 +54,9 @@ override.cpp
     to show what is override in C++
 
 
+this-pointer_private-variable.cpp
+	to show how 'this' is and 'private' variable cannot be exposed in C++
+
+
 using.cpp
     to show how to use 'using' in C++
