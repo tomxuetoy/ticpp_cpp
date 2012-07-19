@@ -24,6 +24,11 @@ PureVirtualDefinitions.cpp
 	to show what is pure virtual function and what is abstract class
 
 
+PureVirtualDestructors.cpp
+	to show the call sequence of pure virtual destructors
+	to show that (1) pure virtual function must have a function entity; (2)  基类的析构函数被编译器重定义并且派生类不会成为抽象类
+
+
 basic.cpp
     basic cpp program, to apply 'using namespace std'
 
