@@ -19,6 +19,11 @@ ObjectSlicing.cpp
 	to show what is object slicing: occur when passing on value instead of address
 
 
+PureVirtualDefinitions.cpp
+	to show what is illegal pure virtual function: inline pure virtual function definition & creating object of a pure virtual function
+	to show what is pure virtual function and what is abstract class
+
+
 basic.cpp
     basic cpp program, to apply 'using namespace std'
 
