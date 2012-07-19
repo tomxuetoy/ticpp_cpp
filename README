@@ -29,6 +29,10 @@ PureVirtualDestructors.cpp
 	to show that (1) pure virtual function must have a function entity; (2)  基类的析构函数被编译器重定义并且派生类不会成为抽象类
 
 
+VariantReturn.cpp
+	(1) to show how to change the virtual function's return type in derived class: via address delivered; (2) to show how dynamic_cast works for downcast
+
+
 basic.cpp
     basic cpp program, to apply 'using namespace std'
 
