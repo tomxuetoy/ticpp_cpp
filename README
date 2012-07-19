@@ -54,6 +54,10 @@ local-varial-in-stack.cpp
     to verify the local variable is in program's stack
 
 
+NameHiding2.cpp
+	to show what will happen when overloading of a virtual function
+
+
 ObjectSlicing.cpp
 	to show what is object slicing: occur when passing on value instead of address
 
