@@ -2,6 +2,23 @@ AddingVirtuals.cpp
     to understand how to invoke new virtual function which is defined in derived class: explicitly type cast
 
 
+Early.cpp
+    to show when late binding occurs and when early binding occurs
+
+
+GP_basic.cpp
+	to show that 'max' is an existing function with <algorithm>
+	to show what is Generic Programming: a basic example
+
+
+NameHiding2.cpp
+	to show what will happen when overloading of a virtual function
+
+
+ObjectSlicing.cpp
+	to show what is object slicing: occur when passing on value instead of address
+
+
 basic.cpp
     basic cpp program, to apply 'using namespace std'
 
@@ -29,17 +46,8 @@ constructor_destructor.cpp
     to show how multi constructors work in C++
 
 
-Early.cpp
-    to show when late binding occurs and when early binding occurs
-
-
 exception.cpp
     to show a basic cpp exception program: try...throw...catch
-
-
-GP_basic.cpp
-	to show that 'max' is an existing function with <algorithm>
-	to show what is Generic Programming: a basic example
 
 
 initializer_list_right.cpp
@@ -52,14 +60,6 @@ initializer_list_wrong.cpp
 local-varial-in-stack.cpp
     show what value the local variable is before initialization:
     to verify the local variable is in program's stack
-
-
-NameHiding2.cpp
-	to show what will happen when overloading of a virtual function
-
-
-ObjectSlicing.cpp
-	to show what is object slicing: occur when passing on value instead of address
 
 
 operator_overload.cpp
