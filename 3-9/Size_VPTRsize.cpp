@@ -8,7 +8,7 @@
 using namespace std;
 
 class NoVirtual {
-  int a;
+//  int a;
 public:
   void x() const {}
   int i() const { return 1; }
@@ -53,4 +53,19 @@ TwoVirtuals: 8
 这是因为VPTR指向一个存放函数地址的表。我们只需要一个表，因为所有虚函数地址都包含在这个单个表中。
 这个例子至少要求一个数据成员。如果没有数据成员，C++编译器会强制这个对象是非零长度，因为每个对象
 必须有一个互相区别的地址。
+
+if changed like below:
+class NoVirtual {
+//  int a;
+public:
+  void x() const {}
+  int i() const { return 1; }
+};
+then the result is:
+int: 4
+NoVirtual: 1    哑成员占据的大小
+void* : 4
+OneVirtual: 8
+TwoVirtuals: 8
+
 */
