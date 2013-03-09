@@ -10,7 +10,7 @@ enum note { middleC, Csharp, Cflat }; // Etc.
 
 class Instrument {
 public:
-  virtual void play(note) const {   // with virtual keyword, late binding ocurs
+  virtual void play(note) const {   // with virtual keyword, late binding ocurs, by tomxue
     cout << "Instrument::play" << endl;
   }
 };
