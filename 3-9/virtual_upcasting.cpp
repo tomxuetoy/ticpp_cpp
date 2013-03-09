@@ -10,7 +10,7 @@ enum note { middleC, Csharp, Eflat }; // Etc.
 
 class Instrument {
 public:
-  void play(note) const {	//not virtual
+  void play(note) const {	//not virtual, so upcasting
     cout << "Instrument::play" << endl;
   }
 };
@@ -37,3 +37,4 @@ int main() {
 
 //output is below:
 //Instrument::play
+// 重载，覆盖和隐藏：这里体现的是隐藏
