@@ -1,16 +1,16 @@
-//: C15:Instrument2.cpp
+//: C15:Instrument3.cpp
 // From Thinking in C++, 2nd Edition
 // Available at http://www.BruceEckel.com
 // (c) Bruce Eckel 2000
 // Copyright notice in Copyright.txt
-// Inheritance & upcasting
+// Late binding with the virtual keyword
 #include <iostream>
 using namespace std;
-enum note { middleC, Csharp, Eflat }; // Etc.
+enum note { middleC, Csharp, Cflat }; // Etc.
 
 class Instrument {
 public:
-  void play(note) const {	// not virtual, so upcasting
+  virtual void play(note) const {   // with virtual keyword, late binding ocurs
     cout << "Instrument::play" << endl;
   }
 };
@@ -19,7 +19,7 @@ public:
 // because they have the same interface:
 class Wind : public Instrument {
 public:
-  // Redefine interface function:
+  // Override interface function:
   void play(note) const {
     cout << "Wind::play" << endl;
   }
@@ -35,6 +35,7 @@ int main() {
   tune(flute); // Upcasting
 } ///:~
 
-//output is below:
-//Instrument::play
-// 重载，覆盖和隐藏：这里体现的是隐藏
+/*
+ * run result:
+ * Wind::play
+ * */
