@@ -1,5 +1,6 @@
 #include <string>
 #include <iostream>
+
 // using declarations states our intent to use these names from the namespace std
 using std::cin;
 using std::string;
