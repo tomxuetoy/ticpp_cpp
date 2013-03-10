@@ -25,7 +25,7 @@ public:
   string type() const { return "Bird"; }
   class BirdFood : public PetFood { //has return, by Tom Xue
   public:
-    string foodType() const { 
+    string foodType() const {
       return "Bird food"; 
     }
   };
@@ -51,7 +51,7 @@ private:
 int main() {
   Bird b; 
   Cat c;
-  Pet* p[] = { &b, &c, }; //must be pointer to object, by Tom xue
+  Pet* p[] = { &b, &c, }; //must be pointer to object, by Tom Xue
   for(int i = 0; i < sizeof p / sizeof *p; i++) //calculate the size of array
     cout << p[i]->type() << " eats "
          << p[i]->eats()->foodType() << endl;
@@ -65,7 +65,9 @@ int main() {
   // Cannot return the exact type: //this is because the b.eats() is derived from PetFood class, by Tom xue
   //! bf = b.eats(); //error: invalid conversion from ‘PetFood*’ to ‘Bird::BirdFood*’
   // Must downcast:
-  bf = dynamic_cast<Bird::BirdFood*>(b.eats());
+  
+  //  bf = dynamic_cast<Bird::BirdFood*>(b.eats()); or bf = (Bird::BirdFood*)(b.eats()); has the same result
+  bf = (Bird::BirdFood*)(b.eats());
   cout << bf->foodType() << endl;
 } ///:~
 
