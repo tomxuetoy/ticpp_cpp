@@ -28,7 +28,7 @@ public:
 class Derived2 : public Base {
 public:
   // Overriding a virtual function:
-  int f() const { 
+  int f() const {
     cout << "Derived2::f()\n"; 
     return 2;
   }
@@ -42,8 +42,8 @@ public:
 
 class Derived4 : public Base {
 public:
-  // Change argument list:
-  int f(int) const { 
+  // Change argument list: // tomxue: this is a hiding
+  int f(int) const {
     cout << "Derived4::f()\n"; 
     return 4; 
   }
@@ -58,15 +58,15 @@ int main() {
   d1.f(s);
   Derived2 d2;
   x = d2.f();
-  //! d2.f(s); // string version hidden because the d2.f() version is applied/redefined
+  // !d2.f(s);      // string version hidden while d2.f() version is override; overload must be in the same class!
   Derived4 d4;
   x = d4.f(1);
-  //! x = d4.f(); // f() version hidden
-  //! d4.f(s);	// string version hidden
-  Base& br = d4; // Upcast
-  //br.f(1); // Derived version unavailable
-  br.f(); // Base version available
-  br.f(s); // Base version abailable
+  //! x = d4.f();   // f() version hidden
+  //! d4.f(s);	    // string version hidden
+  Base& br = d4;    // Upcast
+  // !br.f(1);      // Derived version unavailable
+  br.f();           // Base version available
+  br.f(s);          // Base version abailable
 } ///:~
 
 /* 
